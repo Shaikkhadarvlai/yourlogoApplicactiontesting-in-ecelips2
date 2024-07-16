@@ -14,9 +14,10 @@ public class Selectproductpage
 	   }
 	   
 	   //Locators
-	   private By selectWhite=By.cssSelector("#color_8");
+	   private By selectWhite=By.xpath("//a[@title='White']");
 	   private By addcart=By.xpath("//span[normalize-space()='Add to cart']");
-	   private By checkout=By.xpath("//span[normalize-space()='Proceed to checkout']");
+	
+	  
 	 //Method
 	   public void selecttoaddcart()
 	   {
@@ -28,6 +29,7 @@ public class Selectproductpage
 		   driver.findElement(addcart).click();
 		   
 	   }
+	  
 	   
 	   
 }

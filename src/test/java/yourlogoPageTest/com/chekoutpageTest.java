@@ -8,6 +8,21 @@ public class chekoutpageTest extends BaseClass
   public void testcheckout() 
   {
 	  
-	  cp.clickprcheck();
+	  cp.clickprcheck1();
   }
+  @Test(priority=2)
+  public void testproccesscheckout()
+  {
+	  cp.proccesschekout2();
+  }
+//  @Test(priority=3)
+//  public void testcheckout3()
+//  {
+//	  cp.checkout3();
+//  }
+
+  
+  
+  
+  
 }

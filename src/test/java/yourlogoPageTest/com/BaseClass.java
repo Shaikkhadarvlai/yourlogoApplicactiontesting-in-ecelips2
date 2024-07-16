@@ -13,6 +13,8 @@ import yourlogoPage.com.SearchItemPage;
 import yourlogoPage.com.Selectproductpage;
 import yourlogoPage.com.checkoutpage;
 
+
+
 public class BaseClass 
 {
 	public WebDriver driver;
@@ -29,12 +31,15 @@ public class BaseClass
 		driver=new ChromeDriver();
 		driver.get("http://www.automationpractice.pl/index.php");
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	    driver.manage().window().maximize();
+	    
 	    
 	    ip=new IndexPage (driver);
 	    lp=new LoginPage(driver);
 	    sp=new SearchItemPage (driver);
 	   sel=new Selectproductpage (driver);
 	   cp=new checkoutpage(driver);
+	
 	}
 	
 	
@@ -52,6 +57,14 @@ public class BaseClass
 		 sel.selecttoaddcart();
 		 addWait();
 		 sel.selectcolour();
+		 addWait();
+	     cp.clickprcheck1();
+	     addWait();
+	     cp.proccesschekout2();
+	     addWait();
+	    
+		
+	
 	}
 
 	

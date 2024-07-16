@@ -1,10 +1,15 @@
 package yourlogoutility;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
+import java.util.logging.FileHandler;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,21 +19,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class helping 
 {
 
-//	public static void getScreenshot(WebDriver driver)
-//	{
-//		TakesScreenshot ts=(TakesScreenshot) driver;
-//		  File temp=ts.getScreenshotAs(OutputType.FILE);
-//		  
-//		  //location
-//		  File dest=new File("./"+"\\Screenshots\\SwagLab"+System.currentTimeMillis()+".png");
-//		  
+	public static void getScreenshot(WebDriver driver)
+	{
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		  File temp=ts.getScreenshotAs(OutputType.FILE);
+		  
+		  //location
+		  File dest=new File("./"+"\\Screenshots\\yourlogo"+System.currentTimeMillis()+".png");
+		  
 //		  try {
-//			FileHandler.copy(temp, dest);
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	}
+//				FileHandler.copy(temp, dest);
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+	}
 	
 	
 	
