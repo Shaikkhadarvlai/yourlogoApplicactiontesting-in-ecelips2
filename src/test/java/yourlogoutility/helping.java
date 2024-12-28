@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
-import java.util.logging.FileHandler;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,24 +15,24 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.openqa.selenium.io.FileHandler;
 public class helping 
 {
-
+	
 	public static void getScreenshot(WebDriver driver)
 	{
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		  File temp=ts.getScreenshotAs(OutputType.FILE);
 		  
 		  //location
-		  File dest=new File("./"+"\\Screenshots\\yourlogo"+System.currentTimeMillis()+".png");
+		  File dest=new File("./"+"\\Screenshots\\Beyoung"+System.currentTimeMillis()+".png");
 		  
-//		  try {
-//				FileHandler.copy(temp, dest);
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+		  try {
+			FileHandler.copy(temp, dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	
@@ -122,6 +122,13 @@ public class helping
 		}
 	}
 
+
+
+
+
+		
+	
+	
 
 
 }

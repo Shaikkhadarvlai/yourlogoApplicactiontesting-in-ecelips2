@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="yourlogoPageTest.com.chekoutpageTest">
+      <class name="com.BeyoungPageTest.productOptionSelectPageTest">
         <methods>
-          <include name="testproccesscheckout"/>
-          <include name="testcheckout"/>
-          <include name="setUpBrowse"/>
-          <include name="SetUpPage"/>
+          <include name="SelectAddcart"/>
+          <include name="exiteReport"/>
+          <include name="SetUpBrowser"/>
+          <include name="Reports"/>
+          <include name="SelctOptionsSize"/>
+          <include name="SetUpTestPages"/>
         </methods>
-      </class> <!-- yourlogoPageTest.com.chekoutpageTest -->
+      </class> <!-- com.BeyoungPageTest.productOptionSelectPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
